@@ -5,20 +5,18 @@ import About from './components/About'
 import './App.scss'
 
 function App() {
-  return (
-    <>
+   return (
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          {
-          <Route path="about" element={<About />} />
+         <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            {
+               <Route path="about" element={<About />} />
           /*
           <Route path="/contact" element={<Contact />} />
           */}
-        </Route>
+         </Route>
       </Routes>
-    </>
-  )
+   )
 }
 
 export default App
