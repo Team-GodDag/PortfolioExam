@@ -5,7 +5,6 @@ import './index.scss'
 const Layout = () => {
    return (
       <div className="App">
-         <div className="wave"></div>  {/* bølgeeffekten */}
          <Sidebar />
          <div className="page">
             <span className="tags top-tags">

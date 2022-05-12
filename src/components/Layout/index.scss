@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
 .page {
    width: 100%;
    height: 100%;
@@ -10,18 +13,19 @@
 }
 
 .tags {
-   color: #4d4d4e;
-   opacity: 0.6;
+   color: #a7a7a7;
+   opacity: 0.5;
    position: absolute;
    bottom: 0;
    left: 12rem;
    font-size: 1.5rem;
-   font-family: 'La Belle Aurore', cursive;
+   font-family: 'Roboto', sans-serif;
    z-index: 5;
 }
 
 .bottom-tag-html {
    margin-left: -2rem;
+   font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 .container {
@@ -80,9 +84,9 @@
             font-size: 18px;
             line-height: 18px;
             position: absolute;
-            left: -30px;
+            // left: -30px;
             bottom: -20px;
-            margin-left: 20px;
+            margin-left: -20rem;
             opacity: 0.6;
          }
       }
@@ -116,20 +120,27 @@
    }
 }
 
+.wave-wrapper {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1200px;
+}
+
 .wave {
-   width: 140rem;
-   height: 145rem;
+   width: 270em;
+   height: 275em;
    position: absolute;
-   top: -17%;
-   left: 28%;
-   margin-left: -20%;
+   top: -65%;
+   left: 19%;
+   margin-left: -17%;
    margin-top: -25%;
    border-radius: 45%;
-   background: rgba(225, 100, 95, 1);
+   // background: rgba(225, 100, 95, 1);
    animation: wave 10s infinite linear;
    overflow: hidden;
-   z-index: 1;
+   z-index: 0;
 }
+
 
 @keyframes wave {
    from {

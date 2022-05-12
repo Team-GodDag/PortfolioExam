@@ -36,8 +36,8 @@ const Home = () => {
 
    return (
       <>
-         <div className="wave" style={{ background: ' #FFAE35' }}></div>
          <div className="container home-page">
+            <div className="wave" style={{ background: '#FFAE35' }}></div>
             <div className="text-zone">
                <h1>
                   <span className={letterClass}>H</span>

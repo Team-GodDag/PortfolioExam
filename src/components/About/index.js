@@ -25,8 +25,8 @@ const About = () => {
 
    return (
       <>
-         <div className="wave" style={{ background: ' #66BBC6' }}></div>
          <div className="container about-page">
+         <div className="wave" style={{ background: ' #66BBC6' }}></div>
             <div className="text-zone">
                <h1>The Team</h1>
 
