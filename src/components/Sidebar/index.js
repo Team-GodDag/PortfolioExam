@@ -1,24 +1,28 @@
-import './index.scss'
+import "./index.scss";
+//import GDLogo from "../../assets/images/PLAINsmalllogo.svg"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
   faYoutube,
   faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faPeopleGroup,
   faLightbulb,
   faEnvelope,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <nav>
+      {/* <Link className="logo" to="/">
+    <img src={GDLogo} alt="logo"/>
+    </Link> */}
+      <nav className="main-navigation__header-nav">
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -75,7 +79,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

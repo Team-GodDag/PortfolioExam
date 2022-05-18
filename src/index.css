@@ -7,7 +7,6 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
   display: block;
-  background: linear-gradient(45deg,#66bbc6 35%,#EDA80A );
+  background-color: rgb(50,50,50);
 }

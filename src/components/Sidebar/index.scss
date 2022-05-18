@@ -1,8 +1,8 @@
 .nav-bar {
-    background: #66bbc6;
+    background: transparent;
     width: 6rem;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -128,4 +128,24 @@
       }
     }
   }
+
+  @media screen and (max-width: 568px) {
+    .nav-bar{
+      background: #66bbc6;
+      height: 105%
+
+    }
+  }
+  .main-navigation__header-nav {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .main-navigation__menu-btn {
+      display: none;
+    }
   
+    .main-navigation__header-nav {
+      display: block;
+    }
+  }
