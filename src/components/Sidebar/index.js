@@ -13,12 +13,20 @@ import {
   faPeopleGroup,
   faLightbulb,
   faEnvelope,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
+    <>
+    <div className="test">
+    <button className="main-navigation__menu-btn">
+    <FontAwesomeIcon className="test2" icon={faBars} color="#fff" />
+  </button>
+  </div>
     <div className="nav-bar">
+
       {/* <Link className="logo" to="/">
     <img src={GDLogo} alt="logo"/>
     </Link> */}
@@ -79,6 +87,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
+    </>
   );
 };
 
