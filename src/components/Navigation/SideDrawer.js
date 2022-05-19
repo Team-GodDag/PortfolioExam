@@ -6,17 +6,9 @@ import './SideDrawer.css';
 
 const SideDrawer = props => {
   const content = (
-    //Transition gives an animate effect
-    <CSSTransition
-    //we get the prop from MainNavigation
-      in={props.show}
-      timeout={200}
-      classNames="slide-in-left"
-      mountOnEnter
-      unmountOnExit
-    >
+
+    
       <aside className="side-drawer" onClick={props.onClick}>{props.children}</aside>
-    </CSSTransition>
   );
 
   //We use ReactDOM.createPortal to specify where in the Dom we want to render the content.

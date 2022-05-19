@@ -7,7 +7,7 @@ import SideDrawer from "./SideDrawer";
 import Backdrop from "../UIElements/Backdrop";
 
 const MainNavigation = (props) => {
-  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const [drawerIsOpen, setDrawerIsOpen] = useState(true);
 
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
@@ -18,28 +18,25 @@ const MainNavigation = (props) => {
   };
 
   return (
-    <>
+    //React.Fragment doesent do anything other than we only return one root element
+    <React.Fragment>
+    {/*If drawerIsOpen = true we show the Backdrop component */}
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
           <NavLinks />
         </nav>
       </SideDrawer>
+{/* 
       <MainHeader>
-        <button
-          className="main-navigation__menu-btn"
-          onClick={openDrawerHandler}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
         <h1 className="main-navigation__title">
           <Link to="/">YourPlaces</Link>
         </h1>
-        <nav>...</nav>
-      </MainHeader>
-    </>
+        <nav className="main-navigation__header-nav">
+          <NavLinks />
+        </nav>
+      </MainHeader> */}
+    </React.Fragment>
   );
 };
 

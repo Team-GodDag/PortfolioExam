@@ -9,7 +9,7 @@ $width: 768px;
 }
 
 .portfolioList {
-  font-size: 14px;
+  font-size: 1.2rem;
   margin-right: 50px;
   padding: 7px;
   border-radius: 10px;
@@ -20,7 +20,8 @@ $width: 768px;
   }
 
   &.active {
-    background-color: $mainColor;
-    color: white;
+    background-color: #ffd700;
+    color: black;
+    font-weight: 700;
   }
 }

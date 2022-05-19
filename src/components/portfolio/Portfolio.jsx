@@ -69,7 +69,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className="container">
+      <div className="container portfolio-card">
         {data.map((d) => (
           <div className="item">
             <img

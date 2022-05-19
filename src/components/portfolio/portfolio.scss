@@ -9,6 +9,10 @@ $width: 768px;
     }
 }
 
+.portfolio-card{
+  min-height: 380px !important;
+  flex-wrap: nowrap !important;
+}
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -36,7 +40,7 @@ $width: 768px;
   }
 
   .container {
-    width: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,3 +90,10 @@ $width: 768px;
     }
   }
 }
+
+@media screen and (max-width: 568px) {
+  .portfolio-card{
+    flex-wrap: wrap !important;
+  }
+}
+
