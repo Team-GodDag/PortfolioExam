@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4.7609in" height="4.413in" version="1.1" viewBox="0 0 120.93 112.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="a">
+<stop stop-color="#5200ba" offset="0"/>
+<stop stop-color="#ad00ba" offset="1"/>
+</linearGradient>
+<linearGradient id="d" x1="169.71" x2="170.24" y1="154.19" y2="41.31" gradientTransform="translate(28.839 -1.3221)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#e1645f" offset="0"/>
+<stop stop-color="#eda80a" offset=".53613"/>
+<stop stop-color="#fefaf0" offset="1"/>
+</linearGradient>
+<linearGradient id="c" x1="222.19" x2="250.16" y1="78.914" y2="45.825" gradientTransform="translate(13.229 15.875)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+<linearGradient id="b" x1="220.41" x2="244.35" y1="65.511" y2="65.511" gradientTransform="translate(.52917)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+</defs>
+<g transform="translate(-143.3 -40.514)">
+<ellipse cx="168.27" cy="64.859" rx="45.388" ry="29.338" fill-opacity="0" stroke-width=".26458"/>
+<circle cx="199.34" cy="96.559" r="56.045" fill="url(#d)" stroke-opacity="0"/>
+<path d="m244.75 63.495c-0.37422-14.365-0.81201-19.915-6.5576-16.064-5.7456 3.8517-12.245 13.095-11.07 17.001 1.1749 3.9058 5.7536 9.1386 5.7536 9.1386s-8.3504-2.6863-9.4334-0.12866c-1.083 2.5576-3.4924 10.517-1.7678 11.271 1.7246 0.75377 12.127-5.1775 12.127-5.1775" fill="url(#b)" stroke-opacity="0"/>
+<path d="m246.51 65.47c13.47-5.0045 18.784-6.6662 17.35 0.10071-1.4338 6.7669-7.5901 16.242-11.652 16.607-4.0623 0.36482-10.624-1.9346-10.624-1.9346s5.604 6.7484 3.634 8.7063c-1.97 1.9579-8.4587 7.1592-9.8007 5.8396-1.342-1.3196 0.28662-13.183 0.28662-13.183" fill="url(#c)" stroke-opacity="0"/>
+</g>
+</svg>

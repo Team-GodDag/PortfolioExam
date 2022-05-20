@@ -1,5 +1,5 @@
 import "./index.scss";
-//import GDLogo from "../../assets/images/PLAINsmalllogo.svg"
+import GDLogo from "../../assets/images/PLAINsmalllogo.svg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -46,9 +46,9 @@ const Sidebar = () => {
         </nav>
       </div>
       <div className="nav-bar">
-        {/* <Link className="logo" to="/">
+        <Link className="logo" to="/">
     <img src={GDLogo} alt="logo"/>
-    </Link> */}
+    </Link> 
         <nav className="main-navigation__header-nav">
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
