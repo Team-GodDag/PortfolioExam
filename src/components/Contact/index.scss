@@ -70,6 +70,12 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+
+    &:hover{
+      color:black;
+      background-color: #ffd700;
+      cursor: pointer;
+    }
   }
 }
 
@@ -78,7 +84,7 @@
   float: right;
   width: 53%;
   height: 113%;
-  margin-top: 1%;
+  margin-top: -2%;
   position: relative;
   transform: translateY(-67%);
 }

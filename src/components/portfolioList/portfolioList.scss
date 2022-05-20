@@ -13,10 +13,16 @@ $width: 768px;
   margin-right: 50px;
   padding: 7px;
   border-radius: 10px;
+  color: whitesmoke;
   cursor: pointer;
 
   @include mobile{
     margin-right: 20px;
+  }
+
+  &:hover {
+    background-color: #ffd700;
+    color: black;
   }
 
   &.active {

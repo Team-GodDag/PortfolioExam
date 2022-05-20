@@ -2,7 +2,7 @@
     width: 100%;
     height: calc(100vh - 70px);
     position: relative;
-    top: 70px;
+    top: 7rem;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
@@ -11,6 +11,6 @@
 
 @media screen and (max-width: 568px) {
     .portfolio-section{
-      top:8rem;
+      top:11rem;
     }
 }

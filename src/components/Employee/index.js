@@ -2,7 +2,7 @@ import './index.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import Logo from "../../assets/images/logo512.png"
+import Logo from "../../assets/images/dummy_picture.jpg"
 
 const Employee = (props) => {
   //name, title, description, imgUrl, linkedInUrl
