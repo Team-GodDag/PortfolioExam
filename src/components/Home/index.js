@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="wave" style={{ background: " #66BBC6" }}></div>
+        {/* <div className="wave" style={{ background: " #66BBC6" }}></div> */}
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -38,7 +38,7 @@ const Home = () => {
             />
           </h1>
           <h2 className="skill-description">
-            Full Stack Developer / UX Designer
+            Full Stack Developers / UX Designers
           </h2>
         </div>
       </div>

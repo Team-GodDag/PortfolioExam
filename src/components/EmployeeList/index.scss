@@ -139,7 +139,7 @@ body {
   
   min-width: 225px;
   min-height: 315px;
-  max-height: 370px;
+  max-height: fit-content;
   width: 100%;
   box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 }
@@ -199,8 +199,9 @@ body {
 
 @media screen and (max-width: 568px) {
   .cards_wrap .card_inner {
-    width: 142%;
+    width: 190%;
     max-height: fit-content;
+    margin-left:22px;
   }
   .card_inner_text{
     transform: translateY(-1rem);
@@ -221,6 +222,7 @@ body {
     padding-bottom: 90px;
   }
   .cards_wrap .card_item img {
+    margin-bottom: -2rem;
     height: 8rem;
     width: 8rem;
     transform: translateY(-4rem);

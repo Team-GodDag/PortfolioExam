@@ -237,10 +237,10 @@
   .container.about-page {
     .text-zone {
       position: relative;
-      left: 73%;
-      top: 50%;
-      transform: translateY(84%);
-      width: 100% !important;
+      left: 11%;
+      top: 20px;
+      // transform: translateY(84%);
+      width: 38% !important;
       vertical-align: middle;
       display: table-cell;
       max-height: 90%;
@@ -254,26 +254,33 @@
   .home-page h1:before {
     display: none !important;
   }
+  .container.home-page {
+    width: 87%;
+    padding: 2rem;
+    margin-left: 0rem;
+    top: -10%;
+}
   .container.about-page{
     margin-right: 2rem;
     float: right;
     top: -10%;
   }
   .container.contact-page{
-    width: 75%;
+    width: 87%;
     padding: 2rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
     top: -10%;
   }
 
-  .container.contact-page .text-zone{
-    left: 31%;
-  }
+  // .container.contact-page .text-zone{
+  //   left: 31%;
+  // }
   .container.about-page .text-zone {
     transform: translateY(206%);
-    left: 40%;
+   // left: 40%;
 
   }
+
   .container.contact-page .text-zone h1 {
     font-size: 2rem;
   }

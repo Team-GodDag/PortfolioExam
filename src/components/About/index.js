@@ -1,39 +1,36 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
-import EmployeeList from '../EmployeeList'
+import { useEffect, useState } from "react";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
+import EmployeeList from "../EmployeeList";
 const About = () => {
-
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
-  
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
 
   return (
     <div className="container about-page">
-    <div className="wave" style={{ background: ' #66BBC6' }}></div>
-    <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['T', 'h', 'e', ' ', 't', 'e ', 'a', 'm']}
-              idx={15}
-            />
-          </h1>         
-        </div>
+      <div className="wave" style={{ background: " #66BBC6" }}></div>
+      <div className="text-zone about-text">
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={["T", "h", "e", " ", "t", "e ", "a", "m"]}
+            idx={15}
+          />
+        </h1>
+      </div>
 
-    <EmployeeList/>
-      
-     
+      <EmployeeList />
+
       <Loader type="pacman" />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
