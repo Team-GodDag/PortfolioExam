@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 //import LogoTitle from '../../assets/images/logo-s.png'
@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="wave" style={{ background: " #FFAE35" }}></div>
+        {/* <div className="wave" style={{ background: " #FFAE35" }}></div> */}
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
