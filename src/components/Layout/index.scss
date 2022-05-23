@@ -17,7 +17,7 @@
   bottom: -4.5%;
   left: 12rem;
   font-size: 1.5rem;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   z-index: 2;
 }
 
@@ -26,8 +26,6 @@
     display: none !important;
   }
 }
-
-
 
 .bottom-tag-html {
   margin-left: -2rem;
@@ -61,7 +59,7 @@
 
     h1 {
       font-size: 53px;
-      font-family: 'Coolvetica';
+      font-family: "Coolvetica";
       color: #ffd700;
       font-weight: 400;
       margin-top: 0;
@@ -70,8 +68,8 @@
       left: -10px;
 
       &:before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
+        content: "<h1>";
+        font-family: "La Belle Aurore", cursive;
         color: #ffd700;
         font-size: 18px;
         position: absolute;
@@ -82,8 +80,8 @@
       }
 
       &:after {
-        content: '<h1/>';
-        font-family: 'La Belle Aurore', cursive;
+        content: "<h1/>";
+        font-family: "La Belle Aurore", cursive;
         color: #ffd700;
         font-size: 18px;
         line-height: 18px;
@@ -121,10 +119,7 @@
   }
 }
 
-
 .container.contact-page {
-
-
   .text-zone {
     position: relative;
     left: 22%;
@@ -139,7 +134,7 @@
 
     h1 {
       font-size: 53px;
-      font-family: 'Coolvetica';
+      font-family: "Coolvetica";
       color: #ffd700;
       font-weight: 400;
       margin-top: 0;
@@ -148,8 +143,8 @@
       left: -10px;
 
       &:before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
+        content: "<h1>";
+        font-family: "La Belle Aurore", cursive;
         color: #ffd700;
         font-size: 18px;
         position: absolute;
@@ -160,8 +155,8 @@
       }
 
       &:after {
-        content: '<h1/>';
-        font-family: 'La Belle Aurore', cursive;
+        content: "<h1/>";
+        font-family: "La Belle Aurore", cursive;
         color: #ffd700;
         font-size: 18px;
         line-height: 18px;
@@ -200,29 +195,13 @@
   }
 }
 
-.wave {
-  width: 270em;
-  height: 275em;
-  position: absolute;
-  top: -65%;
-  left: 19%;
-  margin-left: -17%;
-  margin-top: -25%;
-  border-radius: 45%;
-  // background: rgba(225, 100, 95, 1);
-  animation: wave 10s infinite linear;
-  overflow: hidden;
-  z-index: 0;
-}
-
-
 @keyframes wave {
   from {
-     transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   from {
-     transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -233,14 +212,39 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container.contact-page,
+  .container.contact-page {
+    .text-zone {
+      position: relative;
+      padding: 0 2rem;
+      left: -30%;
+      top: -30px;
+      width: 100% !important;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+    }
+  }
+
   .container.about-page {
     .text-zone {
       position: relative;
-      left: 11%;
+      left: -50%;
       top: 20px;
-      // transform: translateY(84%);
-      width: 38% !important;
+      transform: translateY(85%);
+      width: 100% !important;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+    }
+  }
+
+  .container.home-page {
+    .text-zone {
+      position: relative;
+      left: -26%;
+      top: -130px;
+      transform: translateY(235%);
+      width: 100% !important;
       vertical-align: middle;
       display: table-cell;
       max-height: 90%;
@@ -248,37 +252,22 @@
   }
 }
 
-
-
 @media screen and (max-width: 568px) {
   .home-page h1:before {
     display: none !important;
   }
-  .container.home-page {
-    width: 87%;
-    padding: 2rem;
-    margin-left: 0rem;
-    top: -10%;
-}
-  .container.about-page{
-    margin-right: 2rem;
-    float: right;
-    top: -10%;
-  }
-  .container.contact-page{
-    width: 87%;
-    padding: 2rem;
-    margin-left: 0rem;
-    top: -10%;
-  }
+  //   .container.home-page {
+  //     width: 87%;
+  //     padding: 2rem;
+  //     margin-left: 0rem;
+  //     top: -10%;
+  // }
 
   // .container.contact-page .text-zone{
   //   left: 31%;
   // }
   .container.about-page .text-zone {
-    transform: translateY(206%);
-   // left: 40%;
-
+    // left: 40%;
   }
 
   .container.contact-page .text-zone h1 {
