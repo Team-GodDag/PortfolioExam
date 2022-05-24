@@ -17,8 +17,6 @@ const Layout = () => {
       <div className="App">
          <div className="wave" style={{ background: bgColor }}></div>
          <Sidebar
-            // changeBgColor={bgColor => setBgColor(bgColor)}
-            // setBgColor={setBgColor}
             setBgColor={changeColor}
          />
          <div className="page">

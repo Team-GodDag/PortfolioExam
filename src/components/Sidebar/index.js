@@ -65,7 +65,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   activeclassname="active"
                   to="/"
                   // onClick={() => props.changeBgColor('#FFAE35')}
-                  onClick={() => setBgColor('white')} //gul
+                  onClick={() => setBgColor('#FFAE35')} //gul
                >
                   <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                </NavLink>
@@ -74,7 +74,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   className="about-link"
                   to="/about"
                   // onClick={() => props.changeBgColor('#66CBC6')}
-                  onClick={() => setBgColor('#66CBC6')} //blå
+                  onClick={() => setBgColor('#62C1CB')} //blå
                >
                   <FontAwesomeIcon icon={faPeopleGroup} color="#4d4d4e" />
                </NavLink>

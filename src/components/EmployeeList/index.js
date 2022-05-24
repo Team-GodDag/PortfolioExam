@@ -21,7 +21,7 @@ const EmployeeList = () => {
             name={employee.name}
             title={employee.title}
             description={employee.description}
-            imgUrl={employee.imgUrl}
+            imgURL={employee.imgURL}
             linkedInUrl={employee.linkedInUrl}
           />
         ))}
