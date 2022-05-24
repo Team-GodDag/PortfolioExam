@@ -17,31 +17,31 @@ const Home = () => {
       }, 3000);
    }, []);
 
-   return (
-      <>
-         <div className="container home-page">
-            {/* <div className="wave" style={{ background: " #FFAE35" }}></div> */}
-            <div className="text-zone">
-               <h1>
-                  <span className={letterClass}>H</span>
-                  <span className={`${letterClass} _12`}>i,</span>
-                  <br />
-                  <span className={`${letterClass} _13`}>W</span>
-                  <span className={`${letterClass} _14`}>e'</span>
-                  <span className={`${letterClass} _15`}>r</span>
-                  <span className={`${letterClass} _16`}>e</span>
-                  <span className={`${letterClass} _16`}> </span>
-                  <AnimatedLetters
-                     letterClass={letterClass}
-                     strArray={nameArray}
-                     idx={21}
-                  />
-               </h1>
-               <h2 className="skill-description">
-                  Full Stack Developer / UX Designer
-               </h2>
-            </div>
-         </div>
+  return (
+    <>
+      <div className="container home-page">
+        {/* <div className="wave" style={{ background: " #66BBC6" }}></div> */}
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>W</span>
+            <span className={`${letterClass} _14`}>e'</span>
+            <span className={`${letterClass} _15`}>r</span>
+            <span className={`${letterClass} _16`}>e</span>
+            <span className={`${letterClass} _16`}> </span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={21}
+            />
+          </h1>
+          <h2 className="skill-description">
+            Full Stack Developers / UX Designers
+          </h2>
+        </div>
+      </div>
 
          <Loader type="ball-scale-ripple" />
       </>
