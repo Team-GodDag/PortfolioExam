@@ -3,7 +3,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Layout from './components/Layout'
-import Portfolio from './components/portfolio/Portfolio'
+// import Portfolio from './components/portfolio/Portfolio'
 import './App.scss'
 import Projects from './components/Projects'
 

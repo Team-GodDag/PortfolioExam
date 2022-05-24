@@ -12,7 +12,7 @@ import {
    faPeopleGroup,
    faLightbulb,
    faEnvelope,
-   faBars,
+   // faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
