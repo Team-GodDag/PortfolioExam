@@ -163,10 +163,28 @@
           content: 'CONTACT';
         }
       }
-  
+
       a.active {
         svg {
-          color: #fff;
+          color: #FFAE35;
+        }
+      }
+
+      a.about-link.active {
+        svg {
+          color: #62C1CB;
+        }
+      }
+
+      a.projects-link.active {
+        svg {
+          color: #E1645F;
+        }
+      }
+
+      a.contact-link.active {
+        svg {
+          color: #36AE7C;
         }
       }
     }

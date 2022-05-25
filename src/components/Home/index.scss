@@ -8,7 +8,7 @@
       top: 50%;
       transform: translateY(-50%);
       width: 40%;
-      max-height: 90%;
+      max-height: 100%;
    }
 
    h1 {
@@ -23,11 +23,12 @@
          content: '<h1>';
          font-family: 'La Belle Aurore', cursive;
          color: #ffffff;
-         font-size: 1.5rem;
+         font-size: 28px;
          position: absolute;
          margin-top: -40px;
          left: -15px;
          opacity: 0.8;
+         z-index: 99;
       }
 
       &:after {
@@ -37,7 +38,7 @@
          font-size: 1.5rem;
          position: absolute;
          margin-top: 3.6rem;
-         margin-left: -29rem;
+         margin-left: -31.5rem;
          animation: fadeIn 1s 1.7s backwards;
          opacity: 0.8;
       }

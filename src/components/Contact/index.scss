@@ -1,141 +1,144 @@
 .contact-form {
-  width: 100%;
-  margin-top: 20px;
-
-  ul {
-    padding: 0;
-    margin: 0;
-
-    li {
+    width: 100%;
+    margin-top: 20px;
+  
+    ul {
       padding: 0;
       margin: 0;
-      list-style: none;
-      margin-bottom: 10px;
-      opacity: 0;
-      overflow: hidden;
-      display: block;
-      clear: both;
-      position: relative;
-      animation: fadeInUp 2s 2s;
-      animation-fill-mode: forwards;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
     }
-
-    li.half {
-      width: 49%;
-      margin-left: 2%;
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+  
+    .flat-button {
+      color: #FFAE35;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #FFAE35;
       float: left;
-      clear: none;
-
-      &:first-child {
-        margin-left: 0;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+  
+      &:hover{
+        color:black;
+        background-color: #FFAE35;
+        cursor: pointer;
       }
     }
   }
-
-  input[type='text'],
-  input[type='email'] {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 16px;
-    color: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  textarea {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 150px;
-  }
-
-  .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
+  
+  .map-wrap {
+    background: rgba(8, 253, 216, 0.1);
     float: right;
-    text-align: center;
-    margin-right: 10px;
+    width: 53%;
+    height: 113%;
+    margin-top: 3%;
+    position: relative;
+    transform: translateY(-67%);
+  }
+  
+  .leaflet-container {
+    position: relative;
+    width: 105%;
+    height: 105%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .info-map {
+    position: absolute;
+    background: #444;
+    top: -7.5%;
+    right: 30%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+  
+    span {
+      font-size: 16px;
+      color: #FFAE35;
+      display: block;
+      padding-top: 20px;
+  
+    }
+  
+  
+  }
 
-    &:hover{
-      color:black;
-      background-color: #ffd700;
-      cursor: pointer;
+  ::placeholder{
+      color: #18ae7c;
+  }
+  @media screen and (max-width: 568px) {
+    .info-map {
+      display: none !important;
+    }
+    .map-wrap{
+      margin-left: -6.4rem;
+      width: 94%;
+      float:none;
+      margin-top: 19rem;
+      height:50%;
+      padding-bottom: 2rem;
+      background-color: transparent;
     }
   }
-}
-
-.map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
-  height: 113%;
-  margin-top: -2%;
-  position: relative;
-  transform: translateY(-67%);
-}
-
-.leaflet-container {
-  position: relative;
-  width: 105%;
-  height: 105%;
-  opacity: 0;
-  animation: backInRight 1s 1.2s;
-  animation-fill-mode: forwards;
-}
-
-.info-map {
-  position: absolute;
-  background: #000;
-  top: -7.5%;
-  right: 30%;
-  z-index: 999999;
-  width: 267px;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Helvetica';
-  font-size: 17px;
-  font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s;
-  animation-fill-mode: forwards;
-
-  span {
-    font-size: 16px;
-    color: #ffd700;
-    display: block;
-    padding-top: 20px;
-
-  }
-
-
-}
-@media screen and (max-width: 568px) {
-  .info-map {
-    display: none !important;
-  }
-  .map-wrap{
-    margin-left: -6.4rem;
-    width: 94%;
-    float:none;
-    margin-top: 19rem;
-    height:50%;
-    padding-bottom: 2rem;
-    background-color: transparent;
-  }
-}
-

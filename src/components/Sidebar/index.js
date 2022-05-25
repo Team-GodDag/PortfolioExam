@@ -24,25 +24,25 @@ const Sidebar = ({ setBgColor }) => {  //props
                <ul>
                   <NavLink
                      exact="true"
-                     activeclassname="active"
+                     activeclassname="active-home"
                      to="/">
                      <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                   </NavLink>
                   <NavLink
-                     activeclassname="active"
+                     activeclassname="active-about"
                      className="about-link"
                      to="/about">
                      <FontAwesomeIcon icon={faPeopleGroup} color="#4d4d4e" />
                   </NavLink>
                   <NavLink
-                     activeclassname="active"
+                     activeclassname="active-projects"
                      className="projects-link"
                      to="/projects"
                   >
                      <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
                   </NavLink>
                   <NavLink
-                     activeclassname="active"
+                     activeclassname="active-contact"
                      className="contact-link"
                      to="/contact"
                   >
@@ -51,6 +51,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                </ul>
             </nav>
          </div>
+
          <div className="nav-bar">
             <Link className="logo"
                to="/"
@@ -62,7 +63,7 @@ const Sidebar = ({ setBgColor }) => {  //props
             <nav className="main-navigation__header-nav">
                <NavLink
                   exact="true"
-                  activeclassname="active"
+                  activeclassname="active home"
                   to="/"
                   // onClick={() => props.changeBgColor('#FFAE35')}
                   onClick={() => setBgColor('#FFAE35')} //gul

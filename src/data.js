@@ -5,7 +5,7 @@ export const employees = [
       imgURL: "https://www.information.dk/sites/information.dk/files/styles/440x/public/media/2010/03/09/chux.jpg?itok=wyYPkVR8",
       name: "Henrik",
       title: "Alders President",
-      description: "Pacemaker.",
+      description: 'Expert in online solutions, with a range from Java to React with integration to numerous database technologies. No project is too big or too small, Henrik got it all',
       linkedInUrl: "http://lama.dev",
    },
    {

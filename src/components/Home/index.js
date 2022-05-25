@@ -30,11 +30,11 @@ const Home = () => {
             <span className={`${letterClass} _14`}>e'</span>
             <span className={`${letterClass} _15`}>r</span>
             <span className={`${letterClass} _16`}>e</span>
-            <span className={`${letterClass} _16`}> </span>
+            <span className={`${letterClass} _17`}> </span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={21}
+              idx={18}
             />
           </h1>
           <h2 className="skill-description">
