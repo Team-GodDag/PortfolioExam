@@ -23,7 +23,7 @@
          content: '<h1>';
          font-family: 'La Belle Aurore', cursive;
          color: #ffffff;
-         font-size: 28px;
+         font-size: 1.5rem;
          position: absolute;
          margin-top: -40px;
          left: -15px;
@@ -54,7 +54,7 @@
    }
 
    h2 {
-      color: rgb(11, 11, 11);
+      color: rgb(50,50,50);
       margin-top: 4rem;
       font-weight: 400;
       font-size: 0.9rem;
@@ -86,6 +86,7 @@
 }
 
 @media screen and (max-width: 568px) {
+
    .card_inner_text {
       transform: translateY(-1rem);
       padding: 0;

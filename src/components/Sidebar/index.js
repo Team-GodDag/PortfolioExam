@@ -25,7 +25,9 @@ const Sidebar = ({ setBgColor }) => {  //props
                   <NavLink
                      exact="true"
                      activeclassname="active-home"
-                     to="/">
+                     to="/"
+                     onClick={() => setBgColor('#FFAE35')}>
+                     
                      <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                   </NavLink>
                   <NavLink
