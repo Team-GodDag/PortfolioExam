@@ -1,8 +1,8 @@
-.container.about-page {
+.container.projects-page {
   .text-zone {
      position: relative;
-     left: 66%;
-     top: 0.5rem;
+     left: 75%;
+     top: 1.7rem;
      width: 100% !important;
      vertical-align: middle;
      display: table-cell;
@@ -11,7 +11,7 @@
      h1 {
         font-size: 60px;
         font-family: 'Leckerli One', cursive;
-        color: #FFAE35;
+        color: #9448A2;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -63,10 +63,20 @@
   }
 }
 
+.portfolio-section{
+    width: 100%;
+    position: relative;
+    top: 7rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; //for firefox
+    
+}
 
 @media screen and (max-width: 568px) {
-    .tags {
-      display: none !important;
+    .portfolio-section{
+      top:8rem;
+      width: 80%;
+      transform: translateX(70px);
     }
-  }
-
+}
