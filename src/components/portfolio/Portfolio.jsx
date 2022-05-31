@@ -3,7 +3,6 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   allPortfolio,
-  javaPortfolio,
   frontendPortfolio,
   backendPortfolio,
 } from "../../projectsData";
@@ -16,10 +15,6 @@ export default function Portfolio() {
       id: "all",
       title: "All Projects",
     },
-    // {
-    //   id: "java",
-    //   title: "Java",
-    // },
     {
       id: "frontend",
       title: "Frontend",
@@ -35,9 +30,6 @@ export default function Portfolio() {
       case "all":
         setData(allPortfolio);
         break;
-      // case "java":
-      //   setData(javaPortfolio);
-      //   break;
       case "frontend":
         setData(frontendPortfolio);
         break;

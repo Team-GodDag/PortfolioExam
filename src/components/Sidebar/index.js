@@ -12,11 +12,10 @@ import {
    faPeopleGroup,
    faLightbulb,
    faEnvelope,
-   // faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
-const Sidebar = ({ setBgColor }) => {  //props
+const Sidebar = ({ setBgColor }) => {  
    return (
       <>
          <div className="mobile-nav">
@@ -57,8 +56,7 @@ const Sidebar = ({ setBgColor }) => {  //props
          <div className="nav-bar">
             <Link className="logo"
                to="/"
-               // onClick={() => props.changeBgColor('#FFAE35')}
-               onClick={() => setBgColor('#FFAE35')} //gul
+               onClick={() => setBgColor('#FFAE35')} 
             >
                <img src={GDLogo} alt="logo" />
             </Link>
@@ -67,8 +65,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   exact="true"
                   activeclassname="active home"
                   to="/"
-                  // onClick={() => props.changeBgColor('#FFAE35')}
-                  onClick={() => setBgColor('#FFAE35')} //gul
+                  onClick={() => setBgColor('#FFAE35')} 
                >
                   <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                </NavLink>
@@ -76,8 +73,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   activeclassname="active"
                   className="about-link"
                   to="/about"
-                  // onClick={() => props.changeBgColor('#66CBC6')}
-                  onClick={() => setBgColor('#62C1CB')} //blå
+                  onClick={() => setBgColor('#62C1CB')} 
                >
                   <FontAwesomeIcon icon={faPeopleGroup} color="#4d4d4e" />
                </NavLink>
@@ -85,8 +81,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   activeclassname="active"
                   className="projects-link"
                   to="/projects"
-                  // onClick={() => props.changeBgColor('#E1645F')}
-                  onClick={() => setBgColor('#E1645F')} //rød
+                  onClick={() => setBgColor('#E1645F')} 
                >
                   <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
                </NavLink>
@@ -94,8 +89,7 @@ const Sidebar = ({ setBgColor }) => {  //props
                   activeclassname="active"
                   className="contact-link"
                   to="/contact"
-                  // onClick={() => props.changeBgColor('#36AE7C')}
-                  onClick={() => setBgColor('#36AE7C')} //grøn
+                  onClick={() => setBgColor('#36AE7C')}
                >
                   <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                </NavLink>

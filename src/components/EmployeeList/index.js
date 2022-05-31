@@ -1,16 +1,10 @@
-import { employees } from '../../data'
+import { employees } from '../../employeeData'
 import Employee from '../Employee/index'
 import './index.scss'
 import { useEffect, useState } from 'react'
 
 const EmployeeList = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 3000)
-  // }, [])
 
   return (
     <div className="wrapper">

@@ -1,8 +1,6 @@
 import './index.scss'
 
 const Employee = (props) => {
-   //name, title, description, imgUrl, linkedInUrl
-
    return (
       <div className="card_item">
          <div className="card_inner">
@@ -14,7 +12,6 @@ const Employee = (props) => {
             </div>
          </div>
       </div>
-
    )
 }
 

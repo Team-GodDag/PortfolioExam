@@ -210,7 +210,6 @@
       h1 {
          font-size: 60px;
          font-family: 'Leckerli One', cursive;
-         // font-family: 'Oleo Script Swash Caps', cursive;
          color: #FFAE35;
          font-weight: 400;
          margin-top: 0;
@@ -274,32 +273,10 @@
    }
 }
 
-
-// .wave-wrapper {
-//    // width: auto;
-//    // overflow: hidden;
-//    // display: block;
-//    // position: absolute;
-//    // top: 0;
-
-//    // margin-left: auto;
-//    // margin-right: auto;
-//    min-width: 100%;
-//    min-height: 100%;
-//    position: absolute;
-//    left: 50%;
-//    top: 50%;
-//    transform: translate(-50%, -50%);
-//    border-radius: 5px;
-//    // background-image: linear-gradient(to right, #66bbc6 0%, #e7f0fd 100%);
-//    overflow: hidden;
-// }
-
 .wave {
    width: 270em;
    height: 275em;
    position: fixed;
-   // background-attachment: fixed;
    top: -35%;
    left: 26%;
    margin-left: -17%;
@@ -385,26 +362,12 @@
       left: -25%;
    }
 
-   //   .container.home-page {
-   //     width: 87%;
-   //     padding: 2rem;
-   //     margin-left: 0rem;
-   //     top: -10%;
-   // }
-
-   // .container.contact-page .text-zone{
-   //   left: 31%;
-   // }
-   .container.about-page .text-zone {
-      // left: 40%;
-   }
-
    .container.contact-page .text-zone h1 {
       font-size: 2rem;
    }
 
    .container.contact-page .text-zone {
-      left: -30%;
+      left: -23%;
    }
 
    .container.about-page .text-zone {

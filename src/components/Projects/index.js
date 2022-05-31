@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
-import EmployeeList from "../EmployeeList";
 import Portfolio from "../portfolio/Portfolio";
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -15,8 +13,8 @@ const Projects = () => {
   }, []);
 
   return (
+    <>
     <div className="container projects-page">
-      {/* <div className="wave" style={{ background: " #66BBC6" }}></div> */}
       <div className="text-zone">
         <h1>
           <AnimatedLetters
@@ -29,8 +27,9 @@ const Projects = () => {
       <div className="portfolio-section">
       <Portfolio/>  
       </div>
-      <Loader type="pacman" />
     </div>
+    <Loader type="line-scale-pulse-out-rapid" />
+    </>
   );
 };
 
