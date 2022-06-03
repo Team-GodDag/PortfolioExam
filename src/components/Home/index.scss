@@ -86,10 +86,24 @@
 
 @media screen and (max-width: 568px) {
 
-   .card_inner_text {
-      transform: translateY(-1rem);
-      padding: 0;
+      .container.home-page {
+      .text-zone {
+         position: relative;
+         left: -26%;
+         top: 13rem;
+         width: 100% !important;
+         vertical-align: middle;
+         display: table-cell;
+         max-height: 90%;
+         font-size: 15px;
+      }
    }
+
+   .home-page h1:before {
+      display: none !important;
+   }
+
+
 
    .home-page h1 {
       font-size: 2em;

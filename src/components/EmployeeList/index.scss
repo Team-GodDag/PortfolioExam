@@ -112,6 +112,7 @@ body {
 @media screen and (max-width: 568px) {
    .cards_wrap .card_inner {
       width: 190%;
+      min-height:300px;
       max-height: fit-content;
       margin-left: 22px;
    }
@@ -126,7 +127,7 @@ body {
    }
 
    .cards_wrap {
-      transform: translateX(-203px);
+      transform: translateX(-250px);
       padding-top: 3rem;
       width: 100%;
       display: flex;
